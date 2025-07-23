@@ -38,9 +38,9 @@ function App() {
   const [orderSummary, setOrderSummary] = useState(null);
   const summaryRef = useRef(null);
 
-  useEffect(() => {
+ useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const id = "1"; // static for now
+    const id = params.get("table");
     setTableId(id);
   }, []);
 
