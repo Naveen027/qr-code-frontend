@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("https://c.pxhere.com/photos/12/1f/coffee_flat_white_latte_cup_of_coffee_coffee_table-1410426.jpg!d");
+  background-size: cover;
+  /* Ensures full coverage */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent tiling */
+  background-attachment: fixed;
+  /* Optional: locks image on scroll */
+  min-height: 100vh;
+}
+
+/* Container */
+.app-container {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Titles */
+.menu-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.category-title {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* Card layout */
+.menu-card {
+  background: #ffffff6e;
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  margin-bottom: 14px;
+}
+
+/* Text inside cards */
+.menu-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.menu-price {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 4px;
+}
+
+/* Add button */
+.add-btn {
+  background-color: #7e4ffe;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #5e36d1;
+}
+
+/* Cart button */
+.cart-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 0; /* flat look at bottom */
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.cart-btn:disabled {
+  background-color: #ccc;
+}
+
+/* Overlay modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+/* Modal box */
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+}
+
+/* Close icon */
+.close-btn {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Input */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Cart item block */
+.cart-item {
+  margin-bottom: 12px;
+}
+
+/* Quantity change buttons */
+.qty-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  margin: 0 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Remove */
+.remove-btn {
+  margin-left: 8px;
+  color: red;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Submit Order */
+.submit-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.order-summary{
+  color:white
+}
